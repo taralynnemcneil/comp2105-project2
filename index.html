@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <met name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Project 2 Logo Animation</title>
+
+    <style>
+    #render {
+        text-align: center; 
+        width: 100%; 
+        height: 100%; 
+        padding: 150px 0; 
+        margin: auto;
+    }
+
+    #Logo {
+        width: 40%;
+        cursor: pointer;
+    }
+
+	.st0, 
+    .st1 {
+        fill:#FFF;
+        stroke:#1C1B1D;
+        stroke-miterlimit:10;
+    }
+
+	.st0,
+	.st1 {
+		stroke-dasharray: 800;
+		stroke-dashoffset: 0;
+		-webkit-animation: dash 4s linear forwards;
+		-o-animation: dash 4s linear forwards;
+		-moz-animation: dash 4s linear forwards;
+		animation: dash 4s linear forwards;
+	}
+
+    .fill .st0 {
+        fill:#1C1B1D;
+    }
+
+    .fill .st1 {
+        fill:#469FBD;
+    }
+
+	#Logo:hover .st1 {
+		fill:#FFF;
+        stroke:#469FBD;
+		transition: 0.6s;
+	}
+
+	@keyframes dash {
+		from {
+			stroke-dashoffset: 800;
+		}
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="render">
+
+        <object>
+            <svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 168.4 94.4" style="enable-background:new 0 0 168.4 94.4;" xml:space="preserve">
+
+                <polygon id="M" class="st0" points="109.9,40.8 109.9,3.5 129.2,56.2 148.4,3.5 167.7,3.5 167.7,16.4 161.3,16.4 161.3,80.6 
+	            167.7,80.6 167.7,93.5 142,93.5 142,80.6 148.4,80.6 148.4,38.2 129.2,93.5 " />
+                <polygon id="L" class="st1" points="103.6,40.9 103.6,80.8 110,80.8 110,93.6 58.6,93.6 58.6,74.3 71.4,74.3 71.4,80.8 90.7,80.8 
+	            90.7,16.5 84.3,16.5 84.3,3.6 103.6,3.6 " />
+                <path id="T" class="st0" d="M26.3,93.6V80.8h6.4V16.5h-19v6.4H0.9V3.6h77.5v19.3H65.5v-6.4h-20v64.3h6.4v12.9H26.3V93.6z" />
+            </svg>
+        </object>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#Logo').click(function (){
+                this.toggleClass('fill');
+            });
+        });
+    </script>
+</body>
+
+</html>
