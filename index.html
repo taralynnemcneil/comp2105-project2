@@ -9,13 +9,15 @@
 
 	<title>Project 2 Logo Animation</title>
 
-	<!-- Bootstrap -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
 	<style>
 	body {
 		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-		background-image: url('bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover cover;
 		background-position: top;
@@ -148,34 +150,82 @@
 
 <body>
 
-	<div id="render" class="row">
-		<!-- SVG Image -->
-		<object class="col-xs-12">
-            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	        viewBox="0 0 168.4 94.4" style="enable-background:new 0 0 168.4 94.4;" xml:space="preserve">
-				<polygon id="M" class="st0" points="109.9,40.8 109.9,3.5 129.2,56.2 148.4,3.5 167.7,3.5 167.7,16.4 161.3,16.4 161.3,80.6 
-	            167.7,80.6 167.7,93.5 142,93.5 142,80.6 148.4,80.6 148.4,38.2 129.2,93.5 " />
-				<polygon id="L" class="st1" points="103.6,40.9 103.6,80.8 110,80.8 110,93.6 58.6,93.6 58.6,74.3 71.4,74.3 71.4,80.8 90.7,80.8 
-	            90.7,16.5 84.3,16.5 84.3,3.6 103.6,3.6 " />
-				<path id="T" class="st0" d="M26.3,93.6V80.8h6.4V16.5h-19v6.4H0.9V3.6h77.5v19.3H65.5v-6.4h-20v64.3h6.4v12.9H26.3V93.6z" />
-			</svg>
-		</object>
+	<div id="preload">
+		<img src="img/bcg_slide-1.jpg">
+	    <img src="img/bcg_slide-2.jpg">
+	    <img src="img/bcg_slide-3.jpg">
+		<img src="img/bcg_slide-4.jpg">
+    </div>
 
-		<!-- Info -->
-		<section class="col-xs-12">
-			<h2>Graphic Designer | <small>Web Developer</small></h2>
-		</section>
+	<section id="slide-1" class="homeSlide">
+		<div class="bcg">
+			<div class="hsContainer">
+				<div class="hsContent">
+					<div id="render" class="row">
+						<!-- SVG Image -->
+						<object class="col-xs-12">
+							<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 168.4 94.4" style="enable-background:new 0 0 168.4 94.4;" xml:space="preserve">
+								<polygon id="M" class="st0" points="109.9,40.8 109.9,3.5 129.2,56.2 148.4,3.5 167.7,3.5 167.7,16.4 161.3,16.4 161.3,80.6 
+								167.7,80.6 167.7,93.5 142,93.5 142,80.6 148.4,80.6 148.4,38.2 129.2,93.5 " />
+								<polygon id="L" class="st1" points="103.6,40.9 103.6,80.8 110,80.8 110,93.6 58.6,93.6 58.6,74.3 71.4,74.3 71.4,80.8 90.7,80.8 
+								90.7,16.5 84.3,16.5 84.3,3.6 103.6,3.6 " />
+								<path id="T" class="st0" d="M26.3,93.6V80.8h6.4V16.5h-19v6.4H0.9V3.6h77.5v19.3H65.5v-6.4h-20v64.3h6.4v12.9H26.3V93.6z" />
+							</svg>
+						</object>
 
-		<!-- Button -->
-		<section class="col-xs-12">
-			<a href="" class="btn btn-2">Tara Lynne McNeil</a>
-		</section>
+						<!-- Info -->
+						<section class="col-xs-12">
+							<h2>Graphic Designer | <small>Web Developer</small></h2>
+						</section>
 
-	</div>
+						<!-- Button -->
+						<section class="col-xs-12">
+							<a href="" class="btn btn-2">Tara Lynne McNeil</a>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="slide-2" class="homeSlide">
+    	<div class="bcg">
+	    	<div class="hsContainer">
+				<div class="hsContent">
+					<h2>great for story telling websites.</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+		    
+	<section id="slide-3" class="homeSlide">
+		<div class="bcg">
+			<div class="hsContainer">
+	   			<div class="hsContent">
+		    		<h2>Now go and create your own story</h2>
+	    		</div>
+			</div>		    	
+		</div>
+	</section>
+			
+	<section id="slide-4" class="homeSlide">
+		<div class="bcg">
+			<div class="hsContainer">
+		    	<div class="hsContent">
+					<h2>and share mine.</h2>
+				</div>
+	   		</div>			    	
+		</div>
+	</section>
 
 	<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
 	crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
 
 	<script>
 		$(document).ready(function () {
