@@ -77,41 +77,7 @@ main {
 /* Slide Backgrounds */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
-
-/* Slide 1 */
-/* #slide-1 .hsContent {
-	bottom: 200px;
-	top: auto;
-}
-
-/* Slide 2 
-#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
-#slide-2 .hsContent {
-	margin-left: -450px;
-	bottom: 200px;
-	top: auto;
-}
-
-/* Slide 3 
-#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
-#slide-3 .hsContent {
-	margin-left: -239px;
-}
-	#slide-3 h2 {
-		color: #f2ead6;
-		background-color: rgba(0,0,0,0.6);
-	}
-
-/* Slide 4 
-#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
-#slide-4 .hsContent {
-	margin-left: -450px;
-}
-	#slide-4 h2 {
-		background: none;
-		padding-left: 0;
-		padding-right: 0;
-	}
+#slide-7 .bcg {background-image:url('../img/bcg_slide-7.jpg')}
 
 /* ==========================================================================
    Helper classes
