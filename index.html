@@ -22,6 +22,10 @@
 		background-position: top;
 	}
 
+	/* =============================================
+		Slide 1
+	============================================= */
+
     #render {
         text-align: center; 
         width: 100%; 
@@ -143,6 +147,66 @@
 		font-size: 30px;
 	}
 
+	/* =============================================
+		Slide 2
+	============================================= */
+
+	#slide-2 {
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	#slide-2 h2 {
+		font-size: 50px;
+		color: #ffffff;
+		padding: 50px 10px 0;
+	} 
+
+	#clock {
+		display: block;
+	}
+
+	/* =============================================
+		Slide 3
+	============================================= */
+	#slide-3 {
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		background-color: #1C1B1D;
+	}
+
+	#slide-3 h2 {
+		font-size: 50px;
+		color: #469FBD;
+		padding: 50px 10px 0;
+		text-transform: uppercase;
+	}
+
+	#slide-3 p {
+		font-size: 20px;
+		color: #FFFFFF;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#pulse{
+		stroke-dasharray:670;
+		stroke-dashoffset:;
+		animation: beat 1s infinite linear forwards;
+	}
+		
+	@keyframes beat {
+		from {
+			stroke-dashoffset:670;
+		}
+
+		to {
+			stroke-dashoffset:-670;	
+		}	
+	}
+
 </style>
 
 </head>
@@ -156,6 +220,9 @@
 		<img src="img/bcg_slide-4.jpg">
     </div>
 
+	<!-- ============================================
+		Slide 1
+	============================================= -->
 	<section id="slide-1" class="homeSlide">
 		<div class="bcg">
 			<div class="hsContainer">
@@ -180,7 +247,7 @@
 
 						<!-- Button -->
 						<section class="col-xs-12">
-							<a href="" class="btn btn-2">Tara Lynne McNeil</a>
+							<a href="#about" class="btn btn-2">Tara Lynne McNeil</a>
 						</section>
 
 					</div>
@@ -188,17 +255,103 @@
 			</div>
 		</div>
 	</section>
-<!--
-	<section id="slide-2" class="homeSlide">
-    	<div class="bcg">
-	    	<div class="hsContainer">
-				<div class="hsContent">
-					<h2>great for story telling websites.</h2>
+
+	<!-- About Me -->
+	<section id="about">
+
+		<!-- ============================================
+				Slide 2
+		============================================= -->
+		<section id="slide-2" class="container">
+			<div class="bcg">
+				<div class="hsContainer">
+					<div class="hsContent">
+						<object class="col-xs-12 col-sm-3">
+							<svg width="200" height="200">
+
+								<filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+									<feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"></feGaussianBlur>
+									<feOffset in="blur" dx="2.5" dy="2.5"></feOffset>
+								</filter>
+
+								<g>
+									<circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
+									<circle id="circle" style="stroke: #fdfdfd; stroke-width: 12px; fill:#469FBD" cx="100" cy="100" r="80"></circle>
+								</g>
+								<g>
+									<line x1="100" y1="100" x2="100" y2="55" transform="rotate(679.896 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+										<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="43200s" repeatCount="indefinite" from="672.5 100 100" to="1032.5 100 100"></animateTransform>
+									</line>
+									<line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand" transform="rotate(238.748 100 100)">
+										<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="3600s" repeatCount="indefinite" from="150 100 100" to="510 100 100"></animateTransform>
+									</line>
+									<line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand" transform="rotate(380.889 99.9999 99.9998)">
+										<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="60s" repeatCount="indefinite" from="96 100 100" to="456 100 100"></animateTransform>
+									</line>
+								</g>
+								<g>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(30 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(60 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(90 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(120 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(150 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(180 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(210 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(240 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(270 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(300 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(330 100 100)" style="stroke: #ffffff;"></line>
+									<line x1="100" y1="30" x2="100" y2="40" transform="rotate(360 100 100)" style="stroke: #ffffff;"></line>
+									<circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
+								</g>
+							</svg>
+						</object>
+						
+						<section class="col-xs-12 col-sm-9">
+							<h2>I prefer analog clocks to digital</h2>
+						</section>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+		<!-- ============================================
+				Slide 3
+		============================================= -->
+		<section id="slide-3">
+			<div class="bcg">
+				<div class="hsContainer">
+					<div class="hsContent">
+						<section class="col-sm-9">
+							<h2>Staying healthy and active</h2>
+							<p>is important to me with one downfall, smoking, but I am working on that.</p>
+						</section>
+						
+						<object id="health" class="col-sm-3">
+							<svg id="heartBeat" version="1.2" height="210px" width="100%" viewport="0 0 60 60">
+								<path  
+										d="M0,90 L50,90 
+											M50,90 Q58,60 62,87 
+											T65,95 66,88 70,92 t6,35 7,-60
+											T90,127 97,107 s2,-11 10,-10 1,1 8,-10
+											T119,95 c6,4 8,-6 10,-17 s2,-10 9,11 h53"
+								stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="3" />  
+								<path  
+										d="M0,90 L50,90 
+											M50,90 Q58,60 62,87 
+											T65,95 66,88 70,92 t6,35 7,-60
+											T90,127 97,107 s2,-11 10,-10 1,1 8,-10
+											T119,95 c6,4 8,-6 10,-17 s2,-10 9,11 h53"
+								id="pulse" stroke="/*#FFFFFF*/rgba(255,255,255,1)" fill="none" stroke-width="4px" />  
+							</svg>
+						</object>
+					</div>
+				</div>
+			</div>
+		</section>
 	</section>
-		    
+
+<!--  
 	<section id="slide-3" class="homeSlide">
 		<div class="bcg">
 			<div class="hsContainer">
@@ -226,6 +379,7 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
+	<script src="js/clock.js"></script>
 
 	<script>
 		$(document).ready(function () {
