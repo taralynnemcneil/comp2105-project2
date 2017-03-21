@@ -215,6 +215,41 @@ main {
 }
 
 /* ==========================================================================
+   IPhone
+   ========================================================================== */
+
+.screen {
+    left:21px;
+    top:78px;
+    position:relative;
+    overflow:auto;
+}
+
+.screen, .pane {
+    width:211px;
+    height:375px;
+}
+
+.pane {
+    padding-top:10em;
+    text-align:center;
+}
+
+.pane2 {
+    background-color:#444;
+    color:#EEE;
+}
+
+.frame {
+    background-size: contain;
+    background:url("../img/iphone.png") no-repeat top left scroll transparent;
+    height:536px;
+    width:250px;
+    margin:32px auto;
+}
+
+
+/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
